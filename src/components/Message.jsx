@@ -11,7 +11,6 @@ const Message = ({ message }) => {
   // Soat, daqiqa va sekundlarni ajratib olish
   const soat = hozir.getHours();
   const daqiqa = hozir.getMinutes();
-  const sekund = hozir.getSeconds();
 
   const ref = useRef();
 
@@ -34,8 +33,7 @@ const Message = ({ message }) => {
           alt=""
         />
         <span>
-          {soat}:
-          {daqiqa}
+          {soat}:{daqiqa}
         </span>
       </div>
       <div className="messageContent">
